@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/genshin_impact_wallpaper"
+    tools:context=".MainActivity">
+
+    <ToggleButton
+        android:id="@+id/Diligence"
+        android:layout_width="380dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/togglebutton_selector_diligence"
+        android:text="ToggleButton"
+        android:textOff=""
+        android:textOn=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/Prosperity"
+        android:layout_width="380dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/togglebutton_selector_prosperity"
+        android:text="ToggleButton"
+        android:textOn=""
+        android:textOff=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Diligence" />
+
+    <ToggleButton
+        android:id="@+id/Gold"
+        android:layout_width="380dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/togglebutton_selector_gold"
+        android:text="ToggleButton"
+        android:textOn=""
+        android:textOff=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Prosperity" />
+
+    <ToggleButton
+        android:id="@+id/Freedom"
+        android:layout_width="380dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/togglebutton_selector_freedom"
+        android:text="ToggleButton"
+        android:textOn=""
+        android:textOff=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Gold" />
+
+    <ToggleButton
+        android:id="@+id/Resistance"
+        android:layout_width="380dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/togglebutton_selector_resistance"
+        android:text="ToggleButton"
+        android:textOn=""
+        android:textOff=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Freedom" />
+
+    <ToggleButton
+        android:id="@+id/Ballad"
+        android:layout_width="380dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/togglebutton_selector_ballad"
+        android:text="ToggleButton"
+        android:textOn=""
+        android:textOff=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Resistance" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

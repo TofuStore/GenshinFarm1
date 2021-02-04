@@ -18,7 +18,7 @@ public class BalladReceiver extends BroadcastReceiver {
     public void showNotification(Context context) {
         Intent intent = new Intent(context, MainActivity.class);
 
-        PendingIntent forBallad = PendingIntent.getActivity(context, 5, intent,0);
+        PendingIntent forBallad = PendingIntent.getActivity(context, 0, intent,0);
         NotificationCompat.Builder Ballad = new NotificationCompat.Builder(context, "My Notification")
                 .setSmallIcon(R.drawable.ic_launcher_background)
                 .setContentTitle("Talent Level Up Material")
@@ -26,8 +26,8 @@ public class BalladReceiver extends BroadcastReceiver {
         Ballad.setContentIntent(forBallad);
         Ballad.setDefaults(Notification.DEFAULT_SOUND);
         Ballad.setAutoCancel(true);
-        NotificationManager diligenceNotification = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
-        diligenceNotification.notify(5, Ballad.build());
+        NotificationManager balladNotification = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+        balladNotification.notify(0, Ballad.build());
 
     }
 }

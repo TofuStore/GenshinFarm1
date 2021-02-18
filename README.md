@@ -1,3 +1,3 @@
 # GenshinFarm1
 
-Can't get android studio to work with old repository so here's a new one
+Android app that sends notifications to farm talent items on Genshin Impact

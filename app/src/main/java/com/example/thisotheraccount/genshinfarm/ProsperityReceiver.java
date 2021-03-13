@@ -6,6 +6,7 @@ import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.BitmapFactory;
 
 import androidx.core.app.NotificationCompat;
 
@@ -18,9 +19,10 @@ public class ProsperityReceiver extends BroadcastReceiver {
     public void showNotification(Context context) {
         Intent intent = new Intent(context, MainActivity.class);
 
-        PendingIntent forProsperity = PendingIntent.getActivity(context, 1, intent, 0);
+        PendingIntent forProsperity = PendingIntent.getActivity(context, 0, intent, 0);
         NotificationCompat.Builder Prosperity = new NotificationCompat.Builder(context, "My Notification")
-                .setSmallIcon(R.drawable.ic_launcher_background)
+                .setSmallIcon(R.mipmap.paimon_icon_round)
+                .setLargeIcon(BitmapFactory.decodeResource(context.getResources(), R.mipmap.paimon_icon_round))
                 .setContentTitle("Talent Level Up Material")
                 .setContentText("Farm for Teachings of Prosperity");
         Prosperity.setContentIntent(forProsperity);

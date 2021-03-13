@@ -24,6 +24,7 @@ import static android.app.AlarmManager.RTC_WAKEUP;
 
 public class MainActivity extends AppCompatActivity {
 
+    //changes calendar date to next set date
     public static void SetToNextDayOfWeek(int dayOfWeekToSet, Calendar c){
         c.add(Calendar.DAY_OF_YEAR, 1);
         int currentDayOfWeek = c.get(Calendar.DAY_OF_WEEK);
@@ -76,17 +77,17 @@ public class MainActivity extends AppCompatActivity {
 
                 Calendar calendar = Calendar.getInstance();
                 SetToNextDayOfWeek(Calendar.TUESDAY, calendar);
-                calendar.set(Calendar.HOUR, 1);
+                calendar.set(Calendar.HOUR_OF_DAY, 1);
                 calendar.set(Calendar.MINUTE, 0);
 
                 Calendar calendar2 = Calendar.getInstance();
                 SetToNextDayOfWeek(Calendar.FRIDAY, calendar2);
-                calendar2.set(Calendar.HOUR, 1);
+                calendar2.set(Calendar.HOUR_OF_DAY, 1);
                 calendar2.set(Calendar.MINUTE, 0);
 
                 Calendar calendar3 = Calendar.getInstance();
                 SetToNextDayOfWeek(Calendar.SUNDAY, calendar3);
-                calendar3.set(Calendar.HOUR, 1);
+                calendar3.set(Calendar.HOUR_OF_DAY, 1);
                 calendar3.set(Calendar.MINUTE, 0);
 
                 DateFormat sdf = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss.SSS");
@@ -135,17 +136,17 @@ public class MainActivity extends AppCompatActivity {
 
                 Calendar calendar = Calendar.getInstance();
                 SetToNextDayOfWeek(Calendar.MONDAY, calendar);
-                calendar.set(Calendar.HOUR, 1);
+                calendar.set(Calendar.HOUR_OF_DAY, 1);
                 calendar.set(Calendar.MINUTE, 0);
 
                 Calendar calendar2 = Calendar.getInstance();
                 SetToNextDayOfWeek(Calendar.THURSDAY, calendar2);
-                calendar2.set(Calendar.HOUR, 1);
+                calendar2.set(Calendar.HOUR_OF_DAY, 1);
                 calendar2.set(Calendar.MINUTE, 0);
 
                 Calendar calendar3 = Calendar.getInstance();
                 SetToNextDayOfWeek(Calendar.SUNDAY, calendar3);
-                calendar3.set(Calendar.HOUR, 1);
+                calendar3.set(Calendar.HOUR_OF_DAY, 1);
                 calendar3.set(Calendar.MINUTE, 0);
 
                 DateFormat sdf = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss.SSS");
@@ -194,17 +195,17 @@ public class MainActivity extends AppCompatActivity {
 
                 Calendar calendar = Calendar.getInstance();
                 SetToNextDayOfWeek(Calendar.WEDNESDAY, calendar);
-                calendar.set(Calendar.HOUR, 1);
+                calendar.set(Calendar.HOUR_OF_DAY, 1);
                 calendar.set(Calendar.MINUTE, 0);
 
                 Calendar calendar2 = Calendar.getInstance();
                 SetToNextDayOfWeek(Calendar.SATURDAY, calendar2);
-                calendar2.set(Calendar.HOUR, 1);
+                calendar2.set(Calendar.HOUR_OF_DAY, 1);
                 calendar2.set(Calendar.MINUTE, 0);
 
                 Calendar calendar3 = Calendar.getInstance();
                 SetToNextDayOfWeek(Calendar.SUNDAY, calendar3);
-                calendar3.set(Calendar.HOUR, 1);
+                calendar3.set(Calendar.HOUR_OF_DAY, 1);
                 calendar3.set(Calendar.MINUTE, 0);
 
                 DateFormat sdf = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss.SSS");
@@ -253,17 +254,17 @@ public class MainActivity extends AppCompatActivity {
 
                 Calendar calendar = Calendar.getInstance();
                 SetToNextDayOfWeek(Calendar.MONDAY, calendar);
-                calendar.set(Calendar.HOUR, 1);
+                calendar.set(Calendar.HOUR_OF_DAY, 1);
                 calendar.set(Calendar.MINUTE, 0);
 
                 Calendar calendar2 = Calendar.getInstance();
                 SetToNextDayOfWeek(Calendar.THURSDAY, calendar2);
-                calendar2.set(Calendar.HOUR, 1);
+                calendar2.set(Calendar.HOUR_OF_DAY, 1);
                 calendar2.set(Calendar.MINUTE, 0);
 
                 Calendar calendar3 = Calendar.getInstance();
                 SetToNextDayOfWeek(Calendar.SUNDAY, calendar3);
-                calendar3.set(Calendar.HOUR, 1);
+                calendar3.set(Calendar.HOUR_OF_DAY, 1);
                 calendar3.set(Calendar.MINUTE, 0);
 
                 DateFormat sdf = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss.SSS");
@@ -312,17 +313,17 @@ public class MainActivity extends AppCompatActivity {
 
                 Calendar calendar = Calendar.getInstance();
                 SetToNextDayOfWeek(Calendar.TUESDAY, calendar);
-                calendar.set(Calendar.HOUR, 1);
+                calendar.set(Calendar.HOUR_OF_DAY, 1);
                 calendar.set(Calendar.MINUTE, 0);
 
                 Calendar calendar2 = Calendar.getInstance();
                 SetToNextDayOfWeek(Calendar.FRIDAY, calendar2);
-                calendar2.set(Calendar.HOUR, 1);
+                calendar2.set(Calendar.HOUR_OF_DAY, 1);
                 calendar2.set(Calendar.MINUTE, 0);
 
                 Calendar calendar3 = Calendar.getInstance();
                 SetToNextDayOfWeek(Calendar.SUNDAY, calendar3);
-                calendar3.set(Calendar.HOUR, 1);
+                calendar3.set(Calendar.HOUR_OF_DAY, 1);
                 calendar3.set(Calendar.MINUTE, 0);
 
                 DateFormat sdf = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss.SSS");
@@ -371,17 +372,17 @@ public class MainActivity extends AppCompatActivity {
 
                 Calendar calendar = Calendar.getInstance();
                 SetToNextDayOfWeek(Calendar.WEDNESDAY, calendar);
-                calendar.set(Calendar.HOUR, 1);
+                calendar.set(Calendar.HOUR_OF_DAY, 1);
                 calendar.set(Calendar.MINUTE, 0);
 
                 Calendar calendar2 = Calendar.getInstance();
                 SetToNextDayOfWeek(Calendar.SATURDAY, calendar2);
-                calendar2.set(Calendar.HOUR, 1);
+                calendar2.set(Calendar.HOUR_OF_DAY, 1);
                 calendar2.set(Calendar.MINUTE, 0);
 
                 Calendar calendar3 = Calendar.getInstance();
                 SetToNextDayOfWeek(Calendar.SUNDAY, calendar3);
-                calendar3.set(Calendar.HOUR, 1);
+                calendar3.set(Calendar.HOUR_OF_DAY, 1);
                 calendar3.set(Calendar.MINUTE, 0);
 
                 DateFormat sdf = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss.SSS");

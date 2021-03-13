@@ -6,6 +6,7 @@ import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.BitmapFactory;
 
 import androidx.core.app.NotificationCompat;
 
@@ -20,7 +21,8 @@ public class DiligenceReceiver extends BroadcastReceiver {
 
         PendingIntent forDiligence = PendingIntent.getActivity(context, 0, intent,0);
         NotificationCompat.Builder Diligence = new NotificationCompat.Builder(context, "My Notification")
-                .setSmallIcon(R.drawable.ic_launcher_background)
+                .setSmallIcon(R.mipmap.paimon)
+                .setLargeIcon(BitmapFactory.decodeResource(context.getResources(), R.mipmap.paimon_icon_round))
                 .setContentTitle("Talent Level Up Material")
                 .setContentText("Farm for Teachings of Diligence");
         Diligence.setContentIntent(forDiligence);
